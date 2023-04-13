@@ -1,4 +1,3 @@
-from fastapi import FastAPI
 from PIL import Image
 from rembg import remove
 import random
@@ -22,8 +21,8 @@ class ImageBG():
         self.savename = f'{saveNameNumber}.png'
         output_image.save(f'./{self.savename}', format='PNG', optimize=True, quality= 200)
 
-path = 'check1.jpg'
-bgremove = ImageBG(path)
-bgremove.remove_image_BG(sizeofimage=True)
+# path = 'check1.jpg'
+# bgremove = ImageBG(path)
+# bgremove.remove_image_BG(sizeofimage=True)
 
 
