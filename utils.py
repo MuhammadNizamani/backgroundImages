@@ -21,8 +21,8 @@ class ImageBG():
         self.savename = f'{saveNameNumber}.png'
         output_image.save(f'./{self.savename}', format='PNG', optimize=True, quality= 200)
 
-# path = 'check1.jpg'
-# bgremove = ImageBG(path)
-# bgremove.remove_image_BG(sizeofimage=True)
+path = 'check1.jpg'
+bgremove = ImageBG(path)
+bgremove.remove_image_BG(sizeofimage=True)
 
 
