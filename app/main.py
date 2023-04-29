@@ -1,11 +1,6 @@
-import io
-from fastapi import FastAPI, File, UploadFile
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import uuid
-from PIL import Image
 from rembg import remove
-from fastapi.responses import FileResponse
-import tempfile
 from .routers import removebg
 
 # from . import utils
