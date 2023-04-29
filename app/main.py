@@ -15,3 +15,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(removebg.router)
+@app.get("/")
+def welcome():
+    return {"message": "Welcome"}
